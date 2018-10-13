@@ -1,7 +1,12 @@
 element;intro
 #Welcome;<p>Welcome to the demonstration of the custom <b>cached fold-change table</b> panel!</p><p>The source code for this panel is available <a href="https://github.com/kevinrue/iSEE_custom/tree/master/table_cachedFoldChange">here</a></p>
-#customStatTable1;<p>This is the table.</p><p>Right now, it does not display any data because it requires an active selection of samples from another panel to compute a fold-change between the selected samples and all other samples.</p>
+#customStatTable1;<p>This is the custom table panel.</p><p>Right now, it does not display any data because it requires an active selection of samples from another panel to compute a fold-change between the selected samples and all other samples.</p>
 #redDimPlot1;<p>In this example, we have linked the custom panel to the <i>Reduced dimensions plot 1</i> panel.</p>
 #redDimPlot1;<p><b>Action:</b> Please select any group of cells in this plot.</p>
-#customStatTable1;<p>See the custom table being populated with log fold-change values!</p><p>Note how the custom function pre-sorts genes by decreasing fold-change.</p>
-#Bye;<p>To be continued...</p>
+#customStatTable1;<p>See the custom table being populated with log fold-change values!</p><p>Note how the custom function also pre-sorts features by decreasing fold-change.</p>
+#rowDataPlot1;<p>The custom table also accepts a selection of features as a second input.</p><p>If an active selection is received, the table only displays the log fold-change of the selected features.</p>
+#rowDataPlot1;<p><b>Action:</b> Select a set of features. For instance, the 4-6 features that display a high variance.</p>
+#customStatTable1;<p>See the custom table being restricted to the selected features!</p><p>If your selection still includes more features than the table can show, you can see this from the text "Showing ... of ... entries" below the table.</p>
+#rowDataPlot1;<p>The custom function uses a cache to store both the selected column identifiers and the corresponding fold-change (<a href="https://github.com/kevinrue/iSEE_custom/blob/master/table_cachedFoldChange/custom.R#L38">source code</a>).</p><p>This avoids the need to recompute the fold-change if only the selection of features to display changes.</p>
+#rowDataPlot1;<p>Indeed, log fold-change values are computed for <i>all</i> features when the selection of samples changes, which means that only the set of values displayed changes when the feature selection changes.</p><p><b>Action:</b> Successively select different sets of genes, even large ones, and see the custom table instantly update: it is not recomputing anything, only filtering the table for different rows!</p>
+#Bye;<p>Thank you for learning about the <b>cached fold-change table</b> panel!</p>

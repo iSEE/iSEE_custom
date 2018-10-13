@@ -16,6 +16,7 @@ sce <- normalize(sce)
 
 set.seed(1234)
 sce <- runPCA(sce, ncomponents=4)
+set.seed(1234)
 sce <- runTSNE(sce)
 
 rowData(sce)$mean_log <- rowMeans(logcounts(sce))
@@ -53,6 +54,7 @@ initialPanels <- DataFrame(
 app <- iSEE(
     se = sce,
     redDimArgs=redDimArgs, rowDataArgs=rowDataArgs, customStatArgs=customStatArgs,
+    redDimMax = 1, colDataMax = 0, featAssayMax = 0, rowDataMax = 1, sampAssayMax = 0, rowStatMax = 0, colStatMax = 0, customDataMax = 0, heatMapMax = 0, customStatMax = 1,
     initialPanels=initialPanels,
     customStatFun=list(CUSTOM_LFC=CUSTOM_LFC), tour=tour, appTitle = "Custom table panel: Log fold-change (cached)")
 

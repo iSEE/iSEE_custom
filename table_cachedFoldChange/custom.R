@@ -10,6 +10,8 @@
 #'
 #' @return A \code{data.frame}.
 #'
+#' @author Aaron Lun, Kevin Rue-Albrecht
+#'
 CUSTOM_LFC <- function(se, rows, columns) {
     if (is.null(columns)) {
         return(data.frame(logFC=numeric(0)))

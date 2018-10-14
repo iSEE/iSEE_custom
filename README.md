@@ -15,7 +15,7 @@ Each example must be comprised of four files:
 - `custom.R`: a script that defines the function(s) underlying the custom panel.
 - `app.R`: a script that prepares a small data set, configures the _iSEE_ application, and launches the tour.
 - `tour.txt`: a set of step-wise instructions attached to various UI elements in the _iSEE_ user interface.
-- `Screenshot.png`: a screen capture or illustration of the custom panel that will be shown as a thumbnail in this README file. The image will be displayed in format `width="400px" height="200px"`.
+- `Screenshot.png`: a screen capture or illustration of the custom panel that will be shown as a thumbnail in this README file. The image should not include more than 1 row of 3 panels, to be displayed in a `width="450px" height="150px"` format.
 
 To launch an application, simply set your working directory to the appropriate subdirectory, and execute `app.R`.
 
@@ -25,4 +25,4 @@ Click on the the image to access the source code.
 
 Screenshot    | Description  
 ------------- | -------------
-<a href="https://github.com/kevinrue/iSEE_custom/tree/master/table_cachedFoldChange"><img src="table_cachedFoldChange/Screenshot.png" alt="Custom cached log fold-change table" width="400px" height="200px"></a> | **Table of log fold-change with cache.**<br/><ul><li>Compute the log fold-change between a selection of samples and all other samples. Restrict the result table to a selection of features.<li>Cache log fold-change values for all features. Only recompute them when the selection of samples changes.<li>Changing the selection of features simply restrict which rows of the cached results are displayed.</ul>
+<a href="https://github.com/kevinrue/iSEE_custom/tree/master/table_cachedFoldChange"><img src="table_cachedFoldChange/Screenshot.png" alt="Custom cached log fold-change table" width="450px" height="150px"></a> | **Table of log fold-change with cache.**<br/><ul><li>Compute the log fold-change between a selection of samples and all other samples. Restrict the result table to a selection of features.<li>Cache log fold-change values for all features. Only recompute them when the selection of samples changes.<li>Changing the selection of features simply restrict which rows of the cached results are displayed.</ul>

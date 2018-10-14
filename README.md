@@ -17,7 +17,7 @@ Each example must be comprised of four files:
 - `tour.txt`: a set of step-wise instructions attached to various UI elements in the _iSEE_ user interface.
 - `Screenshot.png`: a screen capture or illustration of the custom panel that will be shown as a thumbnail in this README file. The image will be displayed in format `width="400px" height="200px"`.
 
-To launch an application, simply execute `app.R`.
+To launch an application, simply set your working directory to the appropriate subdirectory, and execute `app.R`.
 
 ## Examples available
 

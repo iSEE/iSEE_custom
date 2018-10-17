@@ -1,12 +1,12 @@
 
 # Writing custom panels for the _iSEE_ package
 
-The [_iSEE_](https://github.com/csoneson/iSEE) package provides an interactive user interface for exploring data stored in `SummarizedExperiment` objects.
-This repository contains the code required to construct the tours described in the _iSEE_ paper by [Rue-Albrecht _et al._ (2018).](http://dx.doi.org/10.12688/f1000research.14966.1)
+The [_iSEE_](https://github.com/csoneson/iSEE) package provides an interactive user interface for exploring data stored in `SummarizedExperiment` objects ([Rue-Albrecht _et al._ (2018)](http://dx.doi.org/10.12688/f1000research.14966.1)).
+This repository hosts the source code for minimal iSEE applications that each demonstrate a custom plot or table panel for the _iSEE_ package.
+
+Custom plot and table panels are described in the vignettes of the _iSEE_ package. Briefly, custom panels allow users to add an arbitrary number of functions that process a `SummarizedExperiment` object, a selection of rows, and a selection of columns to produce a `ggplot` object or a `data.frame` from dynamically computed data, unlike predefined plot and table panels.
 
 ## Repository organization
-
-This repository hosts the source code for minimal iSEE applications that each demonstrate a custom panel for the _iSEE_ package.
 
 Each example is stored in a separate subfolder. Folder names should start with `table_` or `plot_`, to indicate the type of custom panel and facilitate browsing.
 

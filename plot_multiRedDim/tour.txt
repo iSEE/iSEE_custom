@@ -1,0 +1,3 @@
+element;intro
+#Welcome;<p>Welcome to the demonstration of the custom <b>multiple reduced dimensions plot</b> panel!</p><p>The source code for this panel is available <a href="https://github.com/kevinrue/iSEE_custom/tree/master/plot_multiRedDim">here</a>.</p>
+#Bye;<p><i>Tour in construction</i></p>

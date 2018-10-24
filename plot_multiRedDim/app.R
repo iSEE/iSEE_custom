@@ -39,32 +39,30 @@ redDimArgs$ColorByColData <- "driver_1_s"
 redDimArgs$BrushData <- list(
     list(xmin = -9, xmax = -4.9, ymin = 4.9, ymax = 9.7,
          mapping = list(x = "X", y = "Y", colour = "ColorBy"),
-         domain = list(left = -9.57059099270312,  right = 7.86028887909233, bottom = -10.2295770832622, top = 10.1418027417992),
-         range = list(left = 38.7190443065069, right = 571.520547945205, bottom = 426.852678724315, top = 23.7921069615253),
          log = list(x = NULL, y = NULL), direction = "xy",
          brushId = "redDimPlot1_Brush", outputId = "redDimPlot1"))
 
-rowDataArgs <- rowDataPlotDefaults(sce, 1)
-rowDataArgs$XAxis <- "Row data"
-rowDataArgs$XAxisRowData <- "mean_log"
-rowDataArgs$YAxis <- "var_log"
+colDataArgs <- colDataPlotDefaults(sce, 1)
+colDataArgs$XAxis <- "Column data"
+colDataArgs$XAxisColData <- "driver_1_s"
+colDataArgs$YAxis <- "Core.Type"
 
 customDataArgs <- customDataPlotDefaults(sce, 1)
 customDataArgs$Function <- "CUSTOM_MULTI"
 customDataArgs$ColumnSource <- "Reduced dimension plot 1"
 customDataArgs$RowSource <- "Row data plot 1"
-customDataArgs$DataBoxOpen <- TRUE
+customDataArgs$SelectBoxOpen <- TRUE
 
 initialPanels <- DataFrame(
-    Name=c("Reduced dimension plot 1", "Row data plot 1", "Custom data plot 1"),
+    Name=c("Reduced dimension plot 1", "Column data plot 1", "Custom data plot 1"),
     Width=c(6L, 6L, 12L))
 
 app <- iSEE(
     se = sce,
-    redDimArgs=redDimArgs, rowDataArgs=rowDataArgs, customDataArgs=customDataArgs,
-    redDimMax = 1, colDataMax = 0, featAssayMax = 0, rowDataMax = 1, sampAssayMax = 0, rowStatMax = 0, colStatMax = 0, customDataMax = 1, heatMapMax = 0, customStatMax = 0,
+    redDimArgs=redDimArgs, colDataArgs=colDataArgs, customDataArgs=customDataArgs,
+    redDimMax = 1, colDataMax = 1, featAssayMax = 0, rowDataMax = 0, sampAssayMax = 0, rowStatMax = 0, colStatMax = 0, customDataMax = 1, heatMapMax = 0, customStatMax = 0,
     initialPanels=initialPanels,
-    customDataFun=list(CUSTOM_MULTI=CUSTOM_MULTI), tour=tour, appTitle = "Custom table panel: Log fold-change (cached)")
+    customDataFun=list(CUSTOM_MULTI=CUSTOM_MULTI), tour=tour, appTitle = "Custom plot panel: Multiple reduced dimensions")
 
 # launch the app itself ----
 

@@ -1,0 +1,13 @@
+element;intro
+#Welcome;<p>Welcome to the demonstration of the custom <b>multiple reduced dimension plot</b> panel!</p><p>The source code for this panel is available <a href="https://github.com/kevinrue/iSEE_custom/tree/master/plot_multiRedDim">here</a>.</p>
+#customDataPlot1;<p>This is the custom table panel.</p><p>It already displays a plot for each of the dimensionality reduction results stored in the input object. Moreover, both plots already highlight the same preconfigured point selection defined in the <i>Reduced dimension plot 1</i> that we will examine in a moment.</p>
+#redDimPlot1;<p>In this example, we have linked the custom panel to the <i>Reduced dimension plot 1</i> panel.</p><p>Moreover, we have also preconfigured a point selection in this panel which is communicated to the <i>Custom data plot 1</i> panel.</p>
+#redDimPlot1;<p><b>Action:</b> Please select any other group of cells in this plot.</p>
+#customDataPlot1;<p>See the custom plot panel being updated to highlight the new selection of data points in all the sub-plots.
+#customDataPlot1_ColumnSource + .selectize-control;<p>The current configuration of panel links compares the distribution of a set of samples selected in one dimensionality reduction result across all the dimensionality reduction results stored in the input object.
+#customDataPlot1_ColumnSource + .selectize-control;<p>Another question could be to compare the distribution of a set of samples that share experimental covariates.</p><p><b>Action:</b> Please select <i>Column data plot 1</i></p>
+#customDataPlot1;<p>Note how the custom plot panel was reset, as there is currently no active selection in <i>Column data plot 1</i>.
+#colDataPlot1;<p><b>Action:</b> Select a set of samples.</p><p>Note that your selection may span multiple group, for instance select the two groups of samples in the first column "Ntsr1-Cre_GN220"</p>
+#customDataPlot1;<p>See the custom plot panel being updated to highlight the new selection of data points in all the sub-plots.
+#Bye;<p>Thank you for learning about the <b>multiple reduced dimension plot</b> panel!</p>
+

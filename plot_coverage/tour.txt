@@ -1,0 +1,7 @@
+element;intro
+#Welcome;<p>Welcome to the demonstration of the custom <b>coverage plot</b> panel!</p><p>The source code for this panel is available <a href="https://github.com/kevinrue/iSEE_custom/tree/master/plot_coverage">here</a>.</p>
+#rowDataPlot1;<p>This is a volcano plot, showing the logFC and -log10(pvalue) for each gene, from a comparison between two cell lines.</p>
+#customDataPlot1;<p>This is the custom coverage plot panel. By default, it shows a prespecified gene. The custom panel is linked to the <i>Row data plot 1</i>, where we can select the gene to display.</p>
+#rowDataPlot1;<p><b>Action:</b> Please select any (single) gene in this plot.</p>
+#customDataPlot1;<p>See the custom coverage plot being populated with the coverage plot of the selected gene.</p>
+#Bye;<p>Thank you for learning about the <b>custom coverage plot</b> panel!</p>

@@ -10,12 +10,13 @@ Custom plot and table panels are described in the vignettes of the _iSEE_ packag
 
 Each example is stored in a separate subfolder. Folder names should start with `table_` or `plot_`, to indicate the type of custom panel and facilitate browsing.
 
-Each example must be comprised of four files:
+Each example must be comprised of five files:
 
 - `custom.R`: a script that defines the function(s) underlying the custom panel.
 - `app.R`: a script that prepares a small data set, configures the _iSEE_ application, and launches the tour.
 - `tour.txt`: a set of step-wise instructions attached to various UI elements in the _iSEE_ user interface.
 - `Screenshot.png`: a screen capture or illustration of the custom panel that will be shown as a thumbnail in this README file. The image should not include more than 1 row of 3 panels, to be displayed in a `width="450px" height="150px"` format.
+- `README.md`: a file that displays `Screenshot.png` in a `width="100%"` format.
 
 To launch an application, simply set your working directory to the appropriate subdirectory, and execute `app.R`.
 
